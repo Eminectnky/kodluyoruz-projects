@@ -27,7 +27,6 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1eH-9b-qQ5" id="hSf-Uj-Fjm">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
                                             <autoresizingMask key="autoresizingMask"/>
-                                            <color key="backgroundColor" red="0.60886179836932941" green="0.53011039231627244" blue="0.8098718523979187" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -36,9 +35,16 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" title="ListApp" id="VLF-qT-N6x"/>
+                    <navigationItem key="navigationItem" title="ListApp" id="VLF-qT-N6x">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="j3L-yJ-Bzr">
+                            <connections>
+                                <action selector="didAddBarButtonItemTapped:" destination="BYZ-38-t0r" id="Twv-ZY-fpU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="TableView" destination="6or-Wh-O9Q" id="fPN-Kc-Fig"/>
+                        <outlet property="tableView" destination="6or-Wh-O9Q" id="Lws-ie-H7a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
