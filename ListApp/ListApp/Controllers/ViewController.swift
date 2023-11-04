@@ -35,6 +35,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     
+    @IBAction func didRemoveBarButtonItemTapped(_ sender: UIBarButtonItem){
+        presentAlert(title: "Uyarı",
+                     message: "Listedeki bütün öğeleri silmek istediğinizden emin misiniz?",
+                     defaultButtonTitle:"Evet",
+                     cancelButtonTitle: "Vazgeç") { _ in
+            self.data.removeAll()
+            self.tableView.reloadData()
+        }
+        
+    }
+    
     @IBAction func didAddBarButtonItemTapped(_ sender:
                                              UIBarButtonItem){
         presentAddAlert()
