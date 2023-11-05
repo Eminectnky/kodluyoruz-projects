@@ -39,7 +39,7 @@
                         <barButtonItem key="leftBarButtonItem" systemItem="trash" id="hgS-3q-09S">
                             <color key="tintColor" systemColor="systemRedColor"/>
                             <connections>
-                                <action selector="didRemoveBarButtonItemTapped:" destination="BYZ-38-t0r" id="yJ0-J3-6Ml"/>
+                                <action selector="didRemoveBarButtonItemTapped:" destination="BYZ-38-t0r" id="aEd-hz-5je"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="j3L-yJ-Bzr">
